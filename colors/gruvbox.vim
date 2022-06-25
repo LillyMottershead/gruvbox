@@ -914,6 +914,35 @@ call s:HL('CocInfoHighlight', s:none, s:none, s:undercurl, s:yellow)
 call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 
 " }}}
+" nvim-cmp: {{{
+
+hi! Visual ctermbg=241
+hi! Pmenu ctermbg=235
+
+hi! CmpItemAbbrDeprecated ctermbg=NONE cterm=strikethrough ctermfg=248
+
+hi! link CmpItemAbbrMatch  GruvboxAqua
+hi! link CmpItemAbbrMatchFuzzy GruvboxAqua
+hi! link CmpItemKindModule GruvboxAqua
+hi! link CmpItemKindEnumMember GruvboxAqua
+
+hi! link CmpItemKindVariable GruvboxBlue
+hi! link CmpItemKindInterface GruvboxBlue
+
+hi! link CmpItemKindText GruvboxPurple
+
+hi! link CmpItemKindFunction GruvboxGreen
+hi! link CmpItemKindMethod GruvboxGreen
+
+hi! link CmpItemKindClass GruvboxOrange
+hi! link CmpItemKindProperty GruvboxOrange
+
+hi! link CmpItemKindUnit GruvboxYellow
+hi! link CmpItemKindTypeParameter GruvboxYellow
+
+hi! link CmpItemKindKeyword GruvboxRed
+hi! link CmpItemKindOperator GruvboxRed
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
