@@ -310,7 +310,7 @@ if exists('g:gruvbox_number_column')
   let s:number_column = get(s:gb, g:gruvbox_number_column)
 endif
 
-let s:sign_column = s:bg1
+let s:sign_column = s:none
 
 if exists('g:gitgutter_override_sign_column_highlight') &&
       \ g:gitgutter_override_sign_column_highlight == 1
@@ -545,7 +545,7 @@ hi! link WarningMsg GruvboxRedBold
 call s:HL('LineNr', s:bg4, s:number_column)
 
 " Column where signs are displayed
-call s:HL('SignColumn', s:none)
+call s:HL('SignColumn', s:none, s:sign_column)
 
 " Line used for closed folds
 call s:HL('Folded', s:gray, s:bg1, s:italic)
