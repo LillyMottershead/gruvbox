@@ -462,7 +462,7 @@ call s:HL('GruvboxOrangeSign', s:orange, s:sign_column, s:invert_signs)
 " General UI: {{{
 
 " Normal text
-call s:HL('Normal', s:fg1, s:bg0)
+call s:HL('Normal', s:fg1, s:none)
 
 " Correct background (see issue #7):
 " --- Problem with changing between dark and light on 256 color terminal
@@ -545,7 +545,7 @@ hi! link WarningMsg GruvboxRedBold
 call s:HL('LineNr', s:bg4, s:number_column)
 
 " Column where signs are displayed
-call s:HL('SignColumn', s:none, s:sign_column)
+call s:HL('SignColumn', s:none, s:none)
 
 " Line used for closed folds
 call s:HL('Folded', s:gray, s:bg1, s:italic)
