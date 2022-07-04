@@ -149,6 +149,8 @@ if g:gruvbox_underline == 0
   let s:underline = ''
 endif
 
+let s:strikethrough = 'strikethrough,'
+
 let s:undercurl = 'undercurl,'
 if g:gruvbox_undercurl == 0
   let s:undercurl = ''
@@ -639,7 +641,7 @@ hi! link Typedef GruvboxYellow
 
 if version >= 700
   " Popup menu: normal item
-  call s:HL('Pmenu', s:fg1, s:bg2)
+  call s:HL('Pmenu', s:fg1, s:bg0)
   " Popup menu: selected item
   call s:HL('PmenuSel', s:bg2, s:blue, s:bold)
   " Popup menu: scrollbar
@@ -916,10 +918,7 @@ call s:HL('CocHintHighlight', s:none, s:none, s:undercurl, s:blue)
 " }}}
 " nvim-cmp: {{{
 
-hi! Visual ctermbg=241
-hi! Pmenu ctermbg=235
-
-hi! CmpItemAbbrDeprecated ctermbg=NONE cterm=strikethrough ctermfg=248
+call s:HL('CmpItemAbbrDeprecated', s:fg3, s:none, s:strikethrough)
 
 hi! link CmpItemAbbrMatch  GruvboxAqua
 hi! link CmpItemAbbrMatchFuzzy GruvboxAqua
