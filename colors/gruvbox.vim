@@ -653,14 +653,14 @@ endif
 " }}}
 " Diffs: {{{
 
-call s:HL('DiffDelete', s:red, s:bg0, s:inverse)
-call s:HL('DiffAdd',    s:green, s:bg0, s:inverse)
+call s:HL('DiffDelete', s:red, s:none, s:inverse)
+call s:HL('DiffAdd',    s:green, s:none, s:inverse)
 "call s:HL('DiffChange', s:bg0, s:blue)
 "call s:HL('DiffText',   s:bg0, s:yellow)
 
 " Alternative setting
-call s:HL('DiffChange', s:aqua, s:bg0, s:inverse)
-call s:HL('DiffText',   s:yellow, s:bg0, s:inverse)
+call s:HL('DiffChange', s:aqua, s:none, s:inverse)
+call s:HL('DiffText',   s:yellow, s:none, s:inverse)
 
 " }}}
 " Spelling: {{{
