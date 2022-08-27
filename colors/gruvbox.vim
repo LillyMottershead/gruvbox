@@ -325,7 +325,7 @@ else
   endif
 endif
 
-let s:color_column = s:bg1
+let s:color_column = s:none
 if exists('g:gruvbox_color_column')
   let s:color_column = get(s:gb, g:gruvbox_color_column)
 endif
@@ -477,7 +477,7 @@ endif
 
 if version >= 700
   " Screen line that the cursor is
-  call s:HL('CursorLine',   s:none, s:bg1)
+  call s:HL('CursorLine',   s:none, s:none)
   " Screen column that the cursor is
   hi! link CursorColumn CursorLine
 
@@ -500,7 +500,7 @@ if version >= 703
   call s:HL('Conceal', s:blue, s:none)
 
   " Line number of CursorLine
-  call s:HL('CursorLineNr', s:yellow, s:bg1)
+  call s:HL('CursorLineNr', s:yellow, s:none, s:bold)
 endif
 
 hi! link NonText GruvboxBg2
@@ -514,11 +514,13 @@ call s:HL('IncSearch', s:hls_cursor, s:none, s:underline)
 
 call s:HL('Underlined', s:blue, s:none, s:underline)
 
-call s:HL('StatusLine',   s:bg2, s:fg1, s:inverse)
-call s:HL('StatusLineNC', s:bg1, s:fg4, s:inverse)
+call s:HL('StatusLine', s:bg4, s:none)
+call s:HL('StatusLineNC', s:bg4, s:none)
 
 " The column separating vertically split windows
 call s:HL('VertSplit', s:bg3, s:vert_split)
+
+call s:HL('WinSeparator', s:bg4, s:none)
 
 " Current match in wildmenu completion
 call s:HL('WildMenu', s:blue, s:bg2, s:bold)
