@@ -531,8 +531,10 @@ hi! link Directory GruvboxGreenBold
 " Titles for output from :set all, :autocmd, etc.
 hi! link Title GruvboxGreenBold
 
+call s:HL('NvimInternalError', s:red, s:none)
+
 " Error messages on the command line
-call s:HL('ErrorMsg',   s:bg0, s:red, s:bold)
+call s:HL('ErrorMsg', s:red, s:none, s:italic)
 " More prompt: -- More --
 hi! link MoreMsg GruvboxYellowBold
 " Current mode message: -- INSERT --
@@ -579,7 +581,7 @@ endif
 
 call s:HL('Comment', s:gray, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
-call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
+call s:HL('Error', s:red, s:none, s:bold)
 
 " Generic statement
 hi! link Statement GruvboxRed
