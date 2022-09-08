@@ -945,6 +945,8 @@ hi! link CmpItemKindTypeParameter GruvboxYellow
 
 hi! link CmpItemKindKeyword GruvboxRed
 hi! link CmpItemKindOperator GruvboxRed
+
+hi! link CmpItemKindSnippet GruvboxAquaBold
 " }}}
 
 " Filetype specific -----------------------------------------------------------
