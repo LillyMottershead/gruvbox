@@ -948,6 +948,10 @@ hi! link CmpItemKindOperator GruvboxRed
 
 hi! link CmpItemKindSnippet GruvboxAquaBold
 " }}}
+" telescope: {{{
+hi! link TelescopeBorder GruvboxFg4
+hi! link TelescopeTitle GruvboxGreenBold
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
