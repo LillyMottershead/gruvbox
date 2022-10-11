@@ -98,10 +98,10 @@ let s:gb.dark4_256   = ['#7c6f64', 243]     " 124-111-100
 let s:gb.gray_245    = ['#928374', 245]     " 146-131-116
 let s:gb.gray_244    = ['#928374', 244]     " 146-131-116
 
-let s:gb.light0_hard = ['#f9f5d7', 230]     " 249-245-215
-let s:gb.light0      = ['#fbf1c7', 229]     " 253-244-193
-let s:gb.light0_soft = ['#f2e5bc', 228]     " 242-229-188
-let s:gb.light1      = ['#ebdbb2', 223]     " 235-219-178
+let s:gb.light0_hard = ['#d7d700', 184]     " 249-245-215
+let s:gb.light0      = ['#d7d75f', 185]     " 253-244-193
+let s:gb.light0_soft = ['#d7d787', 186]     " 242-229-188
+let s:gb.light1      = ['#d7d7af', 187]     " 235-219-178
 let s:gb.light2      = ['#d5c4a1', 250]     " 213-196-161
 let s:gb.light3      = ['#bdae93', 248]     " 189-174-147
 let s:gb.light4      = ['#a89984', 246]     " 168-153-132
@@ -544,6 +544,10 @@ hi! link Question GruvboxOrangeBold
 " Warning messages
 hi! link WarningMsg GruvboxRedBold
 
+hi! link Float GruvboxFg1
+hi! link NormalFloat GruvboxFg1
+hi! link FloatBorder GruvboxBg4
+
 " }}}
 " Gutter: {{{
 
@@ -579,7 +583,7 @@ else
   call s:HL('Special', s:orange, s:bg1, s:italicize_strings)
 endif
 
-call s:HL('Comment', s:gray, s:none, s:italicize_comments)
+call s:HL('Comment', s:fg3, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:none, s:bold)
 
