@@ -957,9 +957,9 @@ hi! link TelescopeBorder GruvboxFg4
 hi! link TelescopeTitle GruvboxGreenBold
 " }}}
 " lsp: {{{
-call s:HL('LspReferenceRead', s:none, s:bg3)
-call s:HL('LspReferenceText', s:none, s:bg3)
-call s:HL('LspReferenceWrite', s:none, s:bg3)
+call s:HL('LspReferenceRead', s:none, s:bg2)
+call s:HL('LspReferenceText', s:none, s:bg2)
+call s:HL('LspReferenceWrite', s:none, s:bg2, s:italic)
 " }}}
 
 " Filetype specific -----------------------------------------------------------
