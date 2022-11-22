@@ -961,6 +961,9 @@ call s:HL('LspReferenceRead', s:none, s:bg2)
 call s:HL('LspReferenceText', s:none, s:bg2)
 call s:HL('LspReferenceWrite', s:none, s:bg2, s:italic)
 " }}}
+" tree-sitter: {{{
+call s:HL('@comment.tag.todo', s:red)
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
