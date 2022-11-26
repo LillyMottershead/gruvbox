@@ -964,6 +964,9 @@ call s:HL('LspReferenceWrite', s:none, s:bg2, s:italic)
 " tree-sitter: {{{
 call s:HL('@comment.tag.todo', s:red)
 " }}}
+" leap.nvim: {{{
+call s:HL('LeapLabelPrimary', s:red, s:none, s:bold)
+" }}}
 
 " Filetype specific -----------------------------------------------------------
 " Diff: {{{
